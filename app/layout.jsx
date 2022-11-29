@@ -1,8 +1,7 @@
+"user client";
 import LoadCSS from "./theme/LoadCSS";
 import Theme from "./theme/Theme";
-import { wrapper } from "../redux/store";
 
-'use client';
 const RootLayout = ({ children }) => {
   return (
     <html>
@@ -27,5 +26,5 @@ const RootLayout = ({ children }) => {
   );
 };
 
-export default wrapper.withRedux(RootLayout);
+export default RootLayout;
 // export default RootLayout;

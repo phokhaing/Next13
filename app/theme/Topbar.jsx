@@ -1,4 +1,4 @@
-'use client';
+"use client";
 const Topbar = () => {
   return (
     <div className="navbar-custom">
@@ -78,7 +78,7 @@ const Topbar = () => {
                       <div className="d-flex align-items-start">
                         <img
                           className="d-flex me-2 rounded-circle"
-                          src="/static/assets/images/users/user-5.jpg"
+                          src="/static/assets/images/users/phokhaing.jpg"
                           alt="Generic placeholder image"
                           height={32}
                         />
@@ -393,12 +393,12 @@ const Topbar = () => {
               aria-expanded="false"
             >
               <img
-                src="/static/assets/images/users/user-6.jpg"
+                src="/static/assets/images/users/phokhaing.jpg"
                 alt="user-image"
                 className="rounded-circle"
               />
               <span className="pro-user-name ms-1">
-                Stanley <i className="mdi mdi-chevron-down" />
+                Pho Khaing <i className="mdi mdi-chevron-down" />
               </span>
             </a>
             <div className="dropdown-menu dropdown-menu-end profile-dropdown ">
