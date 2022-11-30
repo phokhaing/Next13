@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Menu from "./Menu";
 
-const Leftbar = () => {
+const Leftbar = ({ leftBar }) => {
   return (
     <div className="left-side-menu">
       <div className="h-100" data-simplebar>
@@ -63,7 +63,7 @@ const Leftbar = () => {
         {/* end user profile */}
 
         {/*- start menu */}
-        <Menu />
+        <Menu leftBar={leftBar} />
         {/* End Sidebar */}
         <div className="clearfix" />
       </div>

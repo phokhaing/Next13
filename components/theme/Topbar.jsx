@@ -1,10 +1,13 @@
 "use client";
-const Topbar = () => {
+const Topbar = ({ topBar }) => {
   return (
-    <div className="navbar-custom">
+    <div
+      className="navbar-custom"
+      style={{ backgroundColor: `${topBar?.backgroundColor}` }}
+    >
       <div className="container-fluid">
         <ul className="list-unstyled topnav-menu float-end mb-0">
-          <li className="d-none d-lg-block">
+          {/* <li className="d-none d-lg-block">
             <form className="app-search">
               <div className="app-search-box dropdown">
                 <div className="input-group">
@@ -19,11 +22,9 @@ const Topbar = () => {
                   </button>
                 </div>
                 <div className="dropdown-menu dropdown-lg" id="search-dropdown">
-                  {/* item*/}
                   <div className="dropdown-header noti-title">
                     <h5 className="text-overflow mb-2">Found 22 results</h5>
                   </div>
-                  {/* item*/}
                   <a
                     href="javascript:void(0);"
                     className="dropdown-item notify-item"
@@ -31,7 +32,6 @@ const Topbar = () => {
                     <i className="fe-home me-1" />
                     <span>Analytics Report</span>
                   </a>
-                  {/* item*/}
                   <a
                     href="javascript:void(0);"
                     className="dropdown-item notify-item"
@@ -39,7 +39,6 @@ const Topbar = () => {
                     <i className="fe-aperture me-1" />
                     <span>How can I help you?</span>
                   </a>
-                  {/* item*/}
                   <a
                     href="javascript:void(0);"
                     className="dropdown-item notify-item"
@@ -47,12 +46,10 @@ const Topbar = () => {
                     <i className="fe-settings me-1" />
                     <span>User profile settings</span>
                   </a>
-                  {/* item*/}
                   <div className="dropdown-header noti-title">
                     <h6 className="text-overflow mb-2 text-uppercase">Users</h6>
                   </div>
                   <div className="notification-list">
-                    {/* item*/}
                     <a
                       href="javascript:void(0);"
                       className="dropdown-item notify-item"
@@ -70,7 +67,6 @@ const Topbar = () => {
                         </div>
                       </div>
                     </a>
-                    {/* item*/}
                     <a
                       href="javascript:void(0);"
                       className="dropdown-item notify-item"
@@ -92,7 +88,7 @@ const Topbar = () => {
                 </div>
               </div>
             </form>
-          </li>
+          </li> */}
           <li className="dropdown d-inline-block d-lg-none">
             <a
               className="nav-link dropdown-toggle arrow-none waves-effect waves-light"
@@ -214,7 +210,6 @@ const Topbar = () => {
               />
             </a>
             <div className="dropdown-menu dropdown-menu-end">
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <img
                   src="/static/assets/images/flags/germany.jpg"
@@ -224,7 +219,6 @@ const Topbar = () => {
                 />{" "}
                 <span className="align-middle">German</span>
               </a>
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <img
                   src="/static/assets/images/flags/italy.jpg"
@@ -234,7 +228,6 @@ const Topbar = () => {
                 />{" "}
                 <span className="align-middle">Italian</span>
               </a>
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <img
                   src="/static/assets/images/flags/spain.jpg"
@@ -244,7 +237,6 @@ const Topbar = () => {
                 />{" "}
                 <span className="align-middle">Spanish</span>
               </a>
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <img
                   src="/static/assets/images/flags/russia.jpg"
@@ -271,7 +263,6 @@ const Topbar = () => {
               </span>
             </a>
             <div className="dropdown-menu dropdown-menu-end dropdown-lg">
-              {/* item*/}
               <div className="dropdown-item noti-title">
                 <h5 className="m-0">
                   <span className="float-end">
@@ -283,7 +274,6 @@ const Topbar = () => {
                 </h5>
               </div>
               <div className="noti-scroll" data-simplebar>
-                {/* item*/}
                 <a
                   href="javascript:void(0);"
                   className="dropdown-item notify-item active"
@@ -300,7 +290,6 @@ const Topbar = () => {
                     <small>Hi, How are you? What about our next meeting</small>
                   </p>
                 </a>
-                {/* item*/}
                 <a
                   href="javascript:void(0);"
                   className="dropdown-item notify-item"
@@ -313,7 +302,6 @@ const Topbar = () => {
                     <small className="text-muted">1 min ago</small>
                   </p>
                 </a>
-                {/* item*/}
                 <a
                   href="javascript:void(0);"
                   className="dropdown-item notify-item"
@@ -332,7 +320,6 @@ const Topbar = () => {
                     </small>
                   </p>
                 </a>
-                {/* item*/}
                 <a
                   href="javascript:void(0);"
                   className="dropdown-item notify-item"
@@ -345,7 +332,6 @@ const Topbar = () => {
                     <small className="text-muted">5 hours ago</small>
                   </p>
                 </a>
-                {/* item*/}
                 <a
                   href="javascript:void(0);"
                   className="dropdown-item notify-item"
@@ -358,7 +344,6 @@ const Topbar = () => {
                     <small className="text-muted">4 days ago</small>
                   </p>
                 </a>
-                {/* item*/}
                 <a
                   href="javascript:void(0);"
                   className="dropdown-item notify-item"
@@ -402,11 +387,9 @@ const Topbar = () => {
               </span>
             </a>
             <div className="dropdown-menu dropdown-menu-end profile-dropdown ">
-              {/* item*/}
               <div className="dropdown-header noti-title">
                 <h6 className="text-overflow m-0">Welcome !</h6>
               </div>
-              {/* item*/}
               <a
                 href="javascript:void(0);"
                 className="dropdown-item notify-item"
@@ -414,7 +397,6 @@ const Topbar = () => {
                 <i className="fe-user" />
                 <span>My Account</span>
               </a>
-              {/* item*/}
               <a
                 href="javascript:void(0);"
                 className="dropdown-item notify-item"
@@ -422,7 +404,6 @@ const Topbar = () => {
                 <i className="fe-settings" />
                 <span>Settings</span>
               </a>
-              {/* item*/}
               <a
                 href="javascript:void(0);"
                 className="dropdown-item notify-item"
@@ -431,7 +412,6 @@ const Topbar = () => {
                 <span>Lock Screen</span>
               </a>
               <div className="dropdown-divider" />
-              {/* item*/}
               <a
                 href="javascript:void(0);"
                 className="dropdown-item notify-item"
@@ -493,7 +473,91 @@ const Topbar = () => {
             </a>
             {/* End mobile menu toggle*/}
           </li>
-          <li className="dropdown d-none d-xl-block">
+
+          <li className="d-none d-lg-block">
+            <form className="app-search">
+              <div className="app-search-box dropdown">
+                <div className="input-group">
+                  <input
+                    type="search"
+                    className="form-control"
+                    placeholder="Search..."
+                    id="top-search"
+                  />
+                  <button className="btn input-group-text" type="submit">
+                    <i className="fe-search" />
+                  </button>
+                </div>
+                <div className="dropdown-menu dropdown-lg" id="search-dropdown">
+                  <div className="dropdown-header noti-title">
+                    <h5 className="text-overflow mb-2">Found 22 results</h5>
+                  </div>
+                  <a
+                    href="javascript:void(0);"
+                    className="dropdown-item notify-item"
+                  >
+                    <i className="fe-home me-1" />
+                    <span>Analytics Report</span>
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    className="dropdown-item notify-item"
+                  >
+                    <i className="fe-aperture me-1" />
+                    <span>How can I help you?</span>
+                  </a>
+                  <a
+                    href="javascript:void(0);"
+                    className="dropdown-item notify-item"
+                  >
+                    <i className="fe-settings me-1" />
+                    <span>User profile settings</span>
+                  </a>
+                  <div className="dropdown-header noti-title">
+                    <h6 className="text-overflow mb-2 text-uppercase">Users</h6>
+                  </div>
+                  <div className="notification-list">
+                    <a
+                      href="javascript:void(0);"
+                      className="dropdown-item notify-item"
+                    >
+                      <div className="d-flex align-items-start">
+                        <img
+                          className="d-flex me-2 rounded-circle"
+                          src="/static/assets/images/users/user-2.jpg"
+                          alt="Generic placeholder image"
+                          height={32}
+                        />
+                        <div className="w-100">
+                          <h5 className="m-0 font-14">Erwin E. Brown</h5>
+                          <span className="font-12 mb-0">UI Designer</span>
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:void(0);"
+                      className="dropdown-item notify-item"
+                    >
+                      <div className="d-flex align-items-start">
+                        <img
+                          className="d-flex me-2 rounded-circle"
+                          src="/static/assets/images/users/phokhaing.jpg"
+                          alt="Generic placeholder image"
+                          height={32}
+                        />
+                        <div className="w-100">
+                          <h5 className="m-0 font-14">Jacob Deo</h5>
+                          <span className="font-12 mb-0">Developer</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </li>
+
+          {/* <li className="dropdown d-none d-xl-block">
             <a
               className="nav-link dropdown-toggle waves-effect waves-light"
               data-bs-toggle="dropdown"
@@ -506,28 +570,23 @@ const Topbar = () => {
               <i className="mdi mdi-chevron-down" />
             </a>
             <div className="dropdown-menu">
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <i className="fe-briefcase me-1" />
                 <span>New Projects</span>
               </a>
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <i className="fe-user me-1" />
                 <span>Create Users</span>
               </a>
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <i className="fe-bar-chart-line- me-1" />
                 <span>Revenue Report</span>
               </a>
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <i className="fe-settings me-1" />
                 <span>Settings</span>
               </a>
               <div className="dropdown-divider" />
-              {/* item*/}
               <a href="javascript:void(0);" className="dropdown-item">
                 <i className="fe-headphones me-1" />
                 <span>Help &amp; Support</span>
@@ -645,7 +704,7 @@ const Topbar = () => {
                 </div>
               </div>
             </div>
-          </li>
+          </li> */}
         </ul>
         <div className="clearfix" />
       </div>

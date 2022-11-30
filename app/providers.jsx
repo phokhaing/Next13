@@ -1,7 +1,8 @@
-// "use client";
+"use client";
 
-// import { wrapper } from "../redux/store";
+import store from "../service/store";
+import { Provider } from "react-redux";
 
-// export function Providers({ children }) {
-//   return wrapper.withRedux({ children });
-// }
+export function Providers({ children }) {
+  return <Provider store={store}>{children}</Provider>;
+}

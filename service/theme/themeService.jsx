@@ -5,17 +5,23 @@ export const themeService = createSlice({
   initialState: {
     loading: false,
     pageTitle: "Dashboard",
-    topbar: "#0F4FA1",
+    topBar: {
+      backgroundColor: "#0F4FA1",
+    },
+    leftBar: {
+      backgroundColor: "#0F4FA1",
+      textColor: "#C49F07",
+    },
   },
 
   reducers: {
     setTopbar: (state, { payload }) => {
       state.loading = false;
-      state.topbar = payload;
+      state.topBar = payload;
     },
   },
 });
 
-// export const theme = (state) => state.theme;
+export const themeSetting = (state) => state.theme;
 export const { setTopbar } = themeService.actions;
 export default themeService.reducer;

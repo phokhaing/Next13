@@ -1,5 +1,6 @@
+"use client";
+
 import { use } from "react";
-'use client';
 // const listCustomers = async () => {
 //   let posts = await fetch("https://jsonplaceholder.typicode.com/posts");
 //   return posts.json();
