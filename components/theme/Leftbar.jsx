@@ -1,5 +1,8 @@
-import Link from "next/link";
 ("use client");
+
+import Link from "next/link";
+import Menu from "./Menu";
+
 const Leftbar = () => {
   return (
     <div className="left-side-menu">
@@ -60,35 +63,7 @@ const Leftbar = () => {
         {/* end user profile */}
 
         {/*- start menu */}
-        <div id="sidebar-menu">
-          <ul id="side-menu">
-            {/* <li className="menu-title">Navigation</li> */}
-            <li>
-              <Link href="/" legacyBehavior>
-                <a>
-                  <i className="fas fa-home" aria-hidden="true"></i>
-                  <span> Home </span>
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/" legacyBehavior>
-                <a>
-                  <i className="fas fa-user-alt" aria-hidden="true"></i>
-                  <span> User </span>
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/" legacyBehavior>
-                <a>
-                  <i className="fas fa-shield-alt" aria-hidden="true"></i>
-                  <span> Role & Permission </span>
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Menu />
         {/* End Sidebar */}
         <div className="clearfix" />
       </div>

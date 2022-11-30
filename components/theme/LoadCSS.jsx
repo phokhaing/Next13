@@ -1,4 +1,4 @@
-const LoadCSS = ({ children }) => {
+const LoadCSS = () => {
   return (
     <>
       <meta charSet="utf-8" />
@@ -12,6 +12,19 @@ const LoadCSS = ({ children }) => {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       {/* App favicon */}
       <link rel="shortcut icon" href="/static/assets/images/favicon.ico" />
+
+      {/* third party css */}
+      <link
+        href="/static/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="/static/assets/libs/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      {/* third party css end */}
       {/* Bootstrap css */}
       <link
         href="/static/assets/css/bootstrap.min.css"
@@ -32,7 +45,6 @@ const LoadCSS = ({ children }) => {
         type="text/css"
       />
       {/* Head js */}
-      {children}
     </>
   );
 };

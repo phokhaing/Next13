@@ -1,9 +1,10 @@
+"use client";
+
 import Topbar from "./Topbar";
 import Leftbar from "./Leftbar";
 import PageTitle from "./pageTitle";
 import Footer from "./Footer";
 import Rightbar from "./Rightbar";
-'use client';
 
 const Theme = ({ children }) => {
   return (

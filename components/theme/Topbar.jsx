@@ -208,7 +208,7 @@ const Topbar = () => {
               aria-expanded="false"
             >
               <img
-                src="/static/assets/images/flags/us.jpg"
+                src="/static/assets/images/flags/cambodia.png"
                 alt="user-image"
                 height={16}
               />
@@ -467,7 +467,8 @@ const Topbar = () => {
               <img src="/static/assets/images/logo-sm.png" alt height={22} />
             </span>
             <span className="logo-lg">
-              <img src="/static/assets/images/logo-light.png" alt height={20} />
+              <span class="logo-lg-text-light">FTB Bank</span>
+              {/* <img src="/static/assets/images/ftb-logo.png" alt height={20} /> */}
             </span>
           </a>
         </div>

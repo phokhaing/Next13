@@ -1,6 +1,7 @@
 "user client";
-import LoadCSS from "./theme/LoadCSS";
-import Theme from "./theme/Theme";
+import LoadCSS from "../components/theme/LoadCSS";
+import Theme from "../components/theme/Theme";
+import LoadScripts from "../components/theme/LoadScripts";
 
 const RootLayout = ({ children }) => {
   return (
@@ -18,9 +19,7 @@ const RootLayout = ({ children }) => {
         data-sidebar-user="true"
       >
         <Theme>{children}</Theme>
-
-        <script src="/static/assets/js/vendor.min.js"></script>
-        <script src="/static/assets/js/app.min.js"></script>
+        <LoadScripts />
       </body>
     </html>
   );

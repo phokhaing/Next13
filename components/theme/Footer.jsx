@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6">
-            © UBold theme by <a href="#">Coderthemes</a>
+            © FTB Bank <a href="#">Developer</a>
           </div>
           <div className="col-md-6">
             <div className="text-md-end footer-links d-none d-sm-block">
